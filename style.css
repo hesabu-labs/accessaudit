@@ -1,0 +1,38 @@
+:root{--bg:#F2F5F9;--ink:#12203A;--mute:#44526B;--line:#C9D3E2;--card:#FFFFFF;--accent:#0B5FFF;--accent-ink:#FFFFFF;--bad:#B42318;--good:#067647;--code:#E9EEF6}
+@media (prefers-color-scheme:dark){:root{--bg:#0E1626;--ink:#EAF0FA;--mute:#A9B6CC;--line:#2A3A57;--card:#15213A;--accent:#6AA0FF;--accent-ink:#0E1626;--bad:#FF8B7E;--good:#59D69B;--code:#0B1220}}
+*{box-sizing:border-box}
+html{scroll-padding-top:1rem}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.65 "Atkinson Hyperlegible","Segoe UI",system-ui,sans-serif}
+a{color:var(--accent)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+header.site{padding:1.25rem 0;border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap}
+.logo{font-weight:700;font-size:1.25rem;color:var(--ink);text-decoration:none}
+nav a{margin-left:1.25rem}
+h1{font-size:clamp(2rem,5vw,3.25rem);line-height:1.12;margin:0 0 1rem;letter-spacing:-.02em;max-width:20ch}
+h2{font-size:1.6rem;line-height:1.25;margin:3rem 0 1rem}
+h3{font-size:1.15rem;margin:0 0 .5rem}
+p{max-width:68ch}
+.lead{font-size:1.2rem;color:var(--mute);max-width:56ch}
+.hero{padding:3.5rem 0 2rem}
+.btn{display:inline-block;padding:.85rem 1.4rem;border-radius:.5rem;font-weight:700;text-decoration:none;background:var(--accent);color:var(--accent-ink);border:2px solid var(--accent);margin:.25rem .5rem .25rem 0}
+.btn.alt{background:transparent;color:var(--accent)}
+.finding{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--bad);border-radius:.5rem;padding:1.25rem 1.5rem;margin:2rem 0}
+.finding .meta{color:var(--mute);margin:0 0 .75rem}
+.finding .sev{color:var(--bad);font-weight:700}
+pre{background:var(--code);border-radius:.5rem;padding:.9rem 1rem;overflow-x:auto;font:.95rem/1.5 ui-monospace,Menlo,monospace;margin:.5rem 0}
+.fix{border-left:4px solid var(--good);padding-left:1rem}
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr))}
+.tier{background:var(--card);border:1px solid var(--line);border-radius:.5rem;padding:1.5rem}
+.tier .price{font-size:2.25rem;font-weight:700;margin:.25rem 0}
+.tier ul{padding-left:1.2rem;margin:.75rem 0 1.25rem}
+.note{background:var(--card);border:1px solid var(--line);border-radius:.5rem;padding:1rem 1.25rem}
+ol.steps{padding-left:1.25rem;max-width:68ch}
+details{border-bottom:1px solid var(--line);padding:.75rem 0}
+summary{cursor:pointer;font-weight:700}
+footer{margin-top:4rem;padding:2rem 0;border-top:1px solid var(--line);color:var(--mute);font-size:.95rem}
+footer a{margin-right:1.25rem}
+.doc{padding:2.5rem 0}
+.doc h1{max-width:none;font-size:2.25rem}
+.doc h2{font-size:1.25rem;margin-top:2rem}

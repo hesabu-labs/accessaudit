@@ -1,1 +1,83 @@
-<h1>AccessAudit</h1>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AccessAudit: plain-language website accessibility audit reports</title>
+<meta name="description" content="Enter a website URL, get a PDF accessibility audit report that explains every issue in plain language with a copy-paste fix. Built for freelancers and small agencies.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site"><div class="wrap">
+<a class="logo" href="/">AccessAudit</a>
+<nav aria-label="Main"><a href="#sample">Sample finding</a><a href="#pricing">Pricing</a><a href="#limits">Limits</a><a href="#faq">FAQ</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+<h1>Accessibility audit reports your clients can actually read.</h1>
+<p class="lead">Enter a site URL. AccessAudit scans up to 5 or 25 pages with the axe-core engine and sends back a PDF: every issue grouped, ranked by severity, and explained in plain language with a fix you can paste in.</p>
+<p><a class="btn" href="REPLACE_WITH_QUICK_AUDIT_CHECKOUT_URL">Quick Audit, $19</a><a class="btn alt" href="REPLACE_WITH_FULL_AUDIT_CHECKOUT_URL">Full Audit, $49</a></p>
+<p>Built for freelancers and small agencies who need a clear first-pass report without 3 to 8 hours of manual work.</p>
+</section>
+
+<section id="sample" aria-labelledby="sample-h">
+<h2 id="sample-h">What one finding looks like</h2>
+<div class="finding">
+<p class="meta"><span class="sev">Serious</span>: Images need text alternatives. 12 images across 4 pages.</p>
+<p><strong>Why it matters:</strong> Screen reader users hear "image" or a file name instead of what the picture shows, so product photos and diagrams are invisible to them.</p>
+<p><strong>Before</strong></p>
+<pre>&lt;img src="/team-photo.jpg"&gt;</pre>
+<div class="fix"><p><strong>After</strong></p>
+<pre>&lt;img src="/team-photo.jpg" alt="The five-person design team at a whiteboard"&gt;</pre></div>
+<p class="meta">Sample for illustration. Real reports list the exact pages and elements affected.</p>
+</div>
+</section>
+
+<section aria-labelledby="get-h">
+<h2 id="get-h">What you get</h2>
+<ul>
+<li>A PDF report with an overall score, the top issues first, and a per-page breakdown</li>
+<li>Each issue explained in plain language, with a code fix</li>
+<li>Full Audit only: a drafted accessibility statement for the site</li>
+<li>A download link sent to your email, valid for 7 days</li>
+</ul>
+</section>
+
+<section id="pricing" aria-labelledby="price-h">
+<h2 id="price-h">Pricing</h2>
+<div class="grid">
+<div class="tier"><h3>Quick Audit</h3><p class="price">$19</p><ul><li>Up to 5 pages</li><li>PDF report</li><li>Plain-language fixes</li></ul><a class="btn" href="REPLACE_WITH_QUICK_AUDIT_CHECKOUT_URL">Buy Quick Audit</a></div>
+<div class="tier"><h3>Full Audit</h3><p class="price">$49</p><ul><li>Up to 25 pages</li><li>PDF report</li><li>Plain-language fixes</li><li>Accessibility statement draft</li></ul><a class="btn" href="REPLACE_WITH_FULL_AUDIT_CHECKOUT_URL">Buy Full Audit</a></div>
+</div>
+<p>One-time payment. No account needed. Payments are handled by Lemon Squeezy.</p>
+</section>
+
+<section aria-labelledby="how-h">
+<h2 id="how-h">How it works</h2>
+<ol class="steps">
+<li>Pick a plan and enter the site URL at checkout. You confirm you own the site or have permission to scan it.</li>
+<li>We scan the site automatically, following links within the same domain.</li>
+<li>The report is generated and a download link arrives by email.</li>
+</ol>
+</section>
+
+<section id="limits" aria-labelledby="limits-h">
+<h2 id="limits-h">What this is, and is not</h2>
+<div class="note"><p>Automated tools find only part of the accessibility problems on a site. AccessAudit is a <strong>first-pass audit</strong>, not a certificate of compliance and not legal advice. Keyboard flow, reading order and the quality of alt text still need a human check.</p>
+<p>We do not bypass bot protection. If a site blocks automated scans, the scan stops and you are refunded.</p></div>
+</section>
+
+<section id="faq" aria-labelledby="faq-h">
+<h2 id="faq-h">Questions</h2>
+<details><summary>Can I resell the report to my client?</summary><p>Yes. The report is yours to use for your own and your clients' sites.</p></details>
+<details><summary>What if my site blocks the scan?</summary><p>If we cannot load your pages, for example behind a CAPTCHA or a bot challenge, you are refunded automatically. See the <a href="refund.html">refund policy</a>.</p></details>
+<details><summary>Do you scan pages behind a login?</summary><p>No. Only publicly reachable pages are scanned.</p></details>
+<details><summary>Which standard do you check against?</summary><p>The WCAG rules built into axe-core. Reports show which rule each issue breaks.</p></details>
+</section>
+</main>
+<footer><div class="wrap"><a href="terms.html">Terms</a><a href="privacy.html">Privacy</a><a href="refund.html">Refunds</a><p>AccessAudit is run by Edgar Wangaka Wakaba, Nairobi, Kenya. Contact: <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p></div></footer>
+</body>
+</html>
